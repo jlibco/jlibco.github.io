@@ -123,14 +123,17 @@
 
      <script>
              Ready(function(){
-              var link = document.querySelector("link[rel~='icon']");
+                       var link = document.querySelector("link[rel~='icon']");
 if (!link) {
     link = document.createElement('link');
     link.rel = 'icon';
     document.getElementsByTagName('head')[0].appendChild(link);
+    link.href = 'https://jlibco.github.io/image/icon1.jpg';
+
 }
-link.href = 'https://jlibco.github.io/image/icon1.jpg';
+
          });
+
         </script>
 
 </html>
