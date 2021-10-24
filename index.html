@@ -123,6 +123,7 @@
 
      <script>
              Ready(function(){
+               window.setTimeout(function(){
                        var link = document.querySelector("link[rel~='icon']");
 if (!link) {
     link = document.createElement('link');
@@ -132,7 +133,7 @@ if (!link) {
 
 } 
                link.href = 'https://jlibco.github.io/image/icon1.jpg';
-
+               },1000);
          });
 
         </script>
