@@ -24,11 +24,13 @@
     }
     .icon1{
       position:absolute;
-      width:80px;
-      height:50px;
       left:10px;
       top:10px;
       z-index:10;
+        }
+        .img1{
+             width:80px;
+      height:50px;    
         }
      </style>
     </head>
@@ -38,8 +40,8 @@
         <h1 class="header1">News About ACA COVID-19 Cases</h1>
 <br>
 <br>
-        <a  class="icon1" href="https://jlibco.github.io">
-        <img src="/image/icon1.jpg">
+        <a class="icon1" href="https://jlibco.github.io">
+        <img class="img1" src="/image/icon1.jpg">
         </a>
         <p class="p1">
 
@@ -115,6 +117,14 @@
       <script src="https://cdn.jsdelivr.net/gh/jlibco/RecFunctions@ccdae7f4027d8681662151b36aacc2c35071175c/script.js"><script>   
         
     </body>
-
+<script>
+              var link = document.querySelector("link[rel~='icon']");
+if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+link.href = '/image/icon1.jpg';
+        </script>
 
 </html>
