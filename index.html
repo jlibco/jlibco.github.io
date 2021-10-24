@@ -114,10 +114,12 @@
 <br>
 (Note: website work in progress)
 </p>        
-      <script src="https://cdn.jsdelivr.net/gh/jlibco/RecFunctions@ccdae7f4027d8681662151b36aacc2c35071175c/script.js"><script>   
+     
         
     </body>
+     <script src="https://cdn.jsdelivr.net/gh/jlibco/RecFunctions@ccdae7f4027d8681662151b36aacc2c35071175c/script.js"><script>   
 <script>
+             Ready(function(){
               var link = document.querySelector("link[rel~='icon']");
 if (!link) {
     link = document.createElement('link');
@@ -125,6 +127,7 @@ if (!link) {
     document.getElementsByTagName('head')[0].appendChild(link);
 }
 link.href = '/image/icon1.jpg';
+         });
         </script>
 
 </html>
