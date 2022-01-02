@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+     
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <title>Official MFA Webpage</title>
+        <style>
+        .root{
+        position:absolute;
+        
+        }
+        body{
+        
+        }
+        .body1{
+        margin:2px;
+        padding:5px;
+        border:red 2px solid;
+        }
+        .body-g{
+            
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        justify-content:center;
+        }
+        #text-edit{
+        margin-top:10px;
+        }
+        #output{
+        width:400px;
+        height:300px;
+        border:green 2px solid;
+        
+        }
+        #run-code{
+        text-align:center;    
+        background-color:rgb(207, 253, 255);
+        width:100px;
+        height:50px;
+        }
+        </style>
+    </head>
+    <body class="body1">
+    
+
+
+<textarea class="body-g" cols="50" rows="10" id="text-edit" placeholder="Insert HTML here."></textarea>
+<br>
+<button class="body-g" id="run-code">Run</button>
+<br>
+<br>
+<div id="output" class="body-g"></div>
+
+    </body>
+      <script src="https://cdn.jsdelivr.net/gh/jlibco/RecFunctions@9f78159b480b0b808d7b74cefd3f31b9ab8b0454/script.js"></script>
+    <script>
+    Ready(function(){
+        var code=getId("text-edit");
+    var run=getId("run-code");
+    var out=getId("output");
+    run.addEventListener("click",function(e){
+    out.innerHTML=code.value;
+    })
+    });
+    </script>
+</html>
